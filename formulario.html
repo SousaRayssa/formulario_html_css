@@ -14,23 +14,23 @@
     <form action="">
         <fieldset class="grupo">
             <div class="campo">
-                <label for="Nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="Nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
             
             <div class="campo">
-                <label for="Sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
         <div class="campo">
-            <label for="Email">Email</label>
-            <input type="email" name="email" id="email">
+            <label for="Email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
         </div>
 
         <div class="campo">
-          <label for="Genero">qual seu gênero?</label>
+          <label for="Genero"><strong>qual seu gênero?</strong></label>
           <label for="fem">
             <input type="radio" name="feminino" value="feminino" >feminino
           </label>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="campo">
-            <label for="Escola">Você veio de qual rede escolar?</label>
+            <label for="Escola"><strong>Você veio de qual rede escolar?</strong></label>
             <select name="" id="escola">
             <option selected disabled value="">selecione uma opção</option>
             <option value="">rede pública</option>
@@ -50,7 +50,7 @@
 
         <fieldset class="grupo">
             <div class="campo">
-                <label for="tec">selecione as tecnologias que você utiliza.</label><br><br>
+                <label for="tec"><strong>selecione as tecnologias que você utiliza.</strong></label><br><br>
                 <input type="checkbox" id="tec1" name="tec1" value="HTML">
                 <label for="tec1">HTML</label>
                 <input type="checkbox" id="tec2" name="tec2" value="CSS">
@@ -66,11 +66,11 @@
 
         <div class="campo">
             <br>
-            <label for="Experiencia">conte um pouco da sua experiência</label>
+            <label for="Experiencia"><strong>conte um pouco da sua experiência</strong></label>
             <textarea name="experiencia" id="experiencia" row="8" style="width: 26em;"></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="botão">Enviar</button>
     </form>
 </body>
 </html>
