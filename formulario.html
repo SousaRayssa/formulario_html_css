@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Formulario</h1>
+        <p id="subtitulo">Preencha todos os campos corretamente com suas informações.</p>
+        <br>
+    </div>
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+          <label for="Genero">qual seu gênero?</label>
+          <label for="fem">
+            <input type="radio" name="feminino" value="feminino" >feminino
+          </label>
+          <label for="masc">
+            <input type="radio" name="masculino" value="masculino">masculino
+          </label>
+        </div>
+
+        <div class="campo">
+            <label for="Escola">Você veio de qual rede escolar?</label>
+            <select name="" id="escola">
+            <option selected disabled value="">selecione uma opção</option>
+            <option value="">rede pública</option>
+            <option value="">rede privada</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="tec">selecione as tecnologias que você utiliza.</label><br><br>
+                <input type="checkbox" id="tec1" name="tec1" value="HTML">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" id="tec2" name="tec2" value="CSS">
+                <label for="tec2">CSS</label>
+                <input type="checkbox" id="tec3" name="tec3" value="Python">
+                <label for="tec3">Python</label>
+                <input type="checkbox" id="tec4" name="tec4" value="JS">
+                <label for="tec4">JavaScript</label>
+                <input type="checkbox" id="tec5" name="tec5" value="Java">
+                <label for="tec5">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="Experiencia">conte um pouco da sua experiência</label>
+            <textarea name="experiencia" id="experiencia" row="8" style="width: 26em;"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
